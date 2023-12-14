@@ -25,12 +25,12 @@
       }
     },
     "Backend": {
-      "AspNet": true,
-      "AspNetCore": false,
-      "Java": false
+      "AspNet": false,
+      "AspNetCore": true,
+      "Java": true
     },
     "Docker": {
-      "Dockerfile": true,
+      "Dockerfile": false,
       "DockerfileAutobuild": false,
       "DockerBuildShellScript": false,
       "DockerSwarm": false
@@ -59,7 +59,7 @@
       },
       "Oracle": {
         "DiffSql": false,
-        "FullSql": true,
+        "FullSql": false,
         "ConnectionString": null
       },
       "Access": {
