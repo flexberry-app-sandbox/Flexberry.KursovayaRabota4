@@ -11,6 +11,11 @@ Router.map(function () {
   { path: 'i-i-s-kursovaya-rabota-4-прикреп-кн-e/:id' });
   this.route('i-i-s-kursovaya-rabota-4-прикреп-кн-e.new',
   { path: 'i-i-s-kursovaya-rabota-4-прикреп-кн-e/new' });
+  this.route('i-i-s-kursovaya-rabota-4-просмотр-l');
+  this.route('i-i-s-kursovaya-rabota-4-просмотр-e',
+  { path: 'i-i-s-kursovaya-rabota-4-просмотр-e/:id' });
+  this.route('i-i-s-kursovaya-rabota-4-просмотр-e.new',
+  { path: 'i-i-s-kursovaya-rabota-4-просмотр-e/new' });
   this.route('i-i-s-kursovaya-rabota-4-спр-группа-l');
   this.route('i-i-s-kursovaya-rabota-4-спр-группа-e',
   { path: 'i-i-s-kursovaya-rabota-4-спр-группа-e/:id' });

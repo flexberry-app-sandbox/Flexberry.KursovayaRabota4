@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya-rabota-4-просмотр-e",
+  "editForm": "i-i-s-kursovaya-rabota-4-просмотр-e",
+  "external": false,
+  "caption": "Просмотр прикрепленных книг студентом",
+  "name": "IISKursovaya_Rabota_4ПросмотрL",
+  "className": "ПросмотрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-4-просмотр",
+      "modelProjection": "ПросмотрL"
+    }
+  ]
+}

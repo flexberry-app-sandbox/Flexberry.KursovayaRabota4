@@ -63,6 +63,13 @@
           "caption": "Функция: Контроль просмотра и прикрепления студентов",
           "title": "",
           "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya-rabota-4-просмотр-l",
+          "menuName": null,
+          "caption": "Просмотр прикрепленных книг студентом",
+          "title": "",
+          "children": null
         }
       ]
     }

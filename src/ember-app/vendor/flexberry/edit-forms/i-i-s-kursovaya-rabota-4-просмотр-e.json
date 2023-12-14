@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрСтуд",
+      "projection": "СпрСтудL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Просмотр прикрепленных книг студентом",
+  "name": "IISKursovaya_Rabota_4ПросмотрE",
+  "className": "ПросмотрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-4-просмотр",
+      "modelProjection": "ПросмотрE"
+    }
+  ]
+}
