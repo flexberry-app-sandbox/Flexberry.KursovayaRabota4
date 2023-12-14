@@ -13,6 +13,7 @@
         <class>Kursovaya_Rabota_4.model.BazDan</class>
         <class>Kursovaya_Rabota_4.model.PrikrepKn</class>
         <class>Kursovaya_Rabota_4.model.SprGruppa</class>
+        <class>Kursovaya_Rabota_4.model.MetMat</class>
         <class>Kursovaya_Rabota_4.model.SprMaterialy</class>
         <class>Kursovaya_Rabota_4.model.FlexberryAdvLimit</class>
         <class>Kursovaya_Rabota_4.model.NewPlatformFlexberryFlexberryUserSetting</class>

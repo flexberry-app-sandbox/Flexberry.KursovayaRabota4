@@ -62,4 +62,18 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel.спрСтуд.спрГруппа "назв" "message")}}
   </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kursovaya-rabota-4-просмотр-e.метМат-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="метМатGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.метМат
+      content=model.метМат
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "метМат" "isInvalid") "error")
+      data-test-i-i-s-kursovaya-rabota-4-просмотр-e-метМат=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "метМат" "message")}}
+  </div>
 </form>

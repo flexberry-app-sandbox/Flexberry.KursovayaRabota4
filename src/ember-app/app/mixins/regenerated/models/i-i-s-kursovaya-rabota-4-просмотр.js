@@ -6,7 +6,8 @@ import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes'
 
 export let Model = Mixin.create({
   дата: DS.attr('date'),
-  спрСтуд: DS.belongsTo('i-i-s-kursovaya-rabota-4-спр-студ', { inverse: null, async: false })
+  спрСтуд: DS.belongsTo('i-i-s-kursovaya-rabota-4-спр-студ', { inverse: null, async: false }),
+  метМат: DS.hasMany('i-i-s-kursovaya-rabota-4-мет-мат', { inverse: 'просмотр', async: false })
 });
 
 export let ValidationRules = {
@@ -24,6 +25,13 @@ export let ValidationRules = {
       validator('presence', true),
     ],
   },
+  метМат: {
+    descriptionKey: 'models.i-i-s-kursovaya-rabota-4-просмотр.validations.метМат.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('has-many'),
+    ],
+  },
 };
 
 export let defineProjections = function (modelClass) {
@@ -33,7 +41,16 @@ export let defineProjections = function (modelClass) {
       спрГруппа: belongsTo('i-i-s-kursovaya-rabota-4-спр-группа', '', {
         назв: attr('Группа', { index: 2 })
       }, { index: -1, hidden: true })
-    }, { index: 0, displayMemberPath: 'фио студента' })
+    }, { index: 0, displayMemberPath: 'фио студента' }),
+    метМат: hasMany('i-i-s-kursovaya-rabota-4-мет-мат', 'Просмотр прикрепленных книг студентом', {
+      спрМатериалы: belongsTo('i-i-s-kursovaya-rabota-4-спр-материалы', 'Материал', {
+        наименование: attr('Материал', { index: 1 }),
+        вид: attr('Вид материала', { index: 2 }),
+        спрДисциплина: belongsTo('i-i-s-kursovaya-rabota-4-спр-дисциплина', '', {
+          наименование: attr('Дисциплина', { index: 3 })
+        }, { index: -1, hidden: true })
+      }, { index: 0, displayMemberPath: 'материал' })
+    })
   });
 
   modelClass.defineProjection('ПросмотрL', 'i-i-s-kursovaya-rabota-4-просмотр', {

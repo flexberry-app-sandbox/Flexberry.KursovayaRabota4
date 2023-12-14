@@ -21,6 +21,7 @@ import IISKursovaya_Rabota_4СпрСтудEForm from './forms/i-i-s-kursovaya-ra
 import IISKursovaya_Rabota_4СтатEForm from './forms/i-i-s-kursovaya-rabota-4-стат-e';
 import IISKursovaya_Rabota_4БазДанModel from './models/i-i-s-kursovaya-rabota-4-баз-дан';
 import IISKursovaya_Rabota_4КонтрModel from './models/i-i-s-kursovaya-rabota-4-контр';
+import IISKursovaya_Rabota_4МетМатModel from './models/i-i-s-kursovaya-rabota-4-мет-мат';
 import IISKursovaya_Rabota_4ПрикрепКнModel from './models/i-i-s-kursovaya-rabota-4-прикреп-кн';
 import IISKursovaya_Rabota_4ПросмотрModel from './models/i-i-s-kursovaya-rabota-4-просмотр';
 import IISKursovaya_Rabota_4СпрГруппаModel from './models/i-i-s-kursovaya-rabota-4-спр-группа';
@@ -38,6 +39,7 @@ $.extend(true, translations, {
   models: {
     'i-i-s-kursovaya-rabota-4-баз-дан': IISKursovaya_Rabota_4БазДанModel,
     'i-i-s-kursovaya-rabota-4-контр': IISKursovaya_Rabota_4КонтрModel,
+    'i-i-s-kursovaya-rabota-4-мет-мат': IISKursovaya_Rabota_4МетМатModel,
     'i-i-s-kursovaya-rabota-4-прикреп-кн': IISKursovaya_Rabota_4ПрикрепКнModel,
     'i-i-s-kursovaya-rabota-4-просмотр': IISKursovaya_Rabota_4ПросмотрModel,
     'i-i-s-kursovaya-rabota-4-спр-группа': IISKursovaya_Rabota_4СпрГруппаModel,

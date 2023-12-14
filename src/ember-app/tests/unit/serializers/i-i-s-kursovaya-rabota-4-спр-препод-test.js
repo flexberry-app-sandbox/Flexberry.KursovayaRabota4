@@ -14,6 +14,7 @@ moduleForModel('i-i-s-kursovaya-rabota-4-спр-препод', 'Unit | Serialize
 
     'model:i-i-s-kursovaya-rabota-4-баз-дан',
     'model:i-i-s-kursovaya-rabota-4-контр',
+    'model:i-i-s-kursovaya-rabota-4-мет-мат',
     'model:i-i-s-kursovaya-rabota-4-прикреп-кн',
     'model:i-i-s-kursovaya-rabota-4-просмотр',
     'model:i-i-s-kursovaya-rabota-4-спр-группа',

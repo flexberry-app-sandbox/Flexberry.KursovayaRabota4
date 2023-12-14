@@ -25,7 +25,13 @@
       "inverse": null
     }
   ],
-  "hasMany": [],
+  "hasMany": [
+    {
+      "name": "метМат",
+      "relatedTo": "i-i-s-kursovaya-rabota-4-мет-мат",
+      "inverse": "просмотр"
+    }
+  ],
   "projections": [
     {
       "name": "ПросмотрE",
@@ -76,7 +82,15 @@
           "inverse": null
         }
       ],
-      "hasMany": []
+      "hasMany": [
+        {
+          "projectionName": "МетМатE",
+          "caption": "Просмотр прикрепленных книг студентом",
+          "name": "метМат",
+          "relatedTo": "i-i-s-kursovaya-rabota-4-мет-мат",
+          "inverse": null
+        }
+      ]
     },
     {
       "name": "ПросмотрL",

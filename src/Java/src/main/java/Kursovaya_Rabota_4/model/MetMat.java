@@ -9,14 +9,13 @@ import java.util.UUID;
 
 import com.sap.olingo.jpa.metadata.core.edm.annotation.EdmIgnore;
 import java.util.Date;
-import java.util.List;
 
 /**
- * Entity implementation class for Entity: Просмотр
+ * Entity implementation class for Entity: МетМат
  */
-@Entity(name = "IISKursovaya_Rabota_4Просмотр")
-@Table(schema = "public", name = "Просмотр")
-public class Prosmotr {
+@Entity(name = "IISKursovaya_Rabota_4МетМат")
+@Table(schema = "public", name = "МетМат")
+public class MetMat {
 
     @Id
     @Converter(converterClass = UUIDConverter.class, name = "primarykey")
@@ -28,20 +27,27 @@ public class Prosmotr {
     private Date дата;
 
     @EdmIgnore
-    @Converter(converterClass = UUIDConverter.class, name = "SprStud")
-    @Convert("SprStud")
-    @Column(name = "СпрСтуд", length = 16, unique = true, nullable = false)
-    private UUID _sprstudid;
+    @Converter(converterClass = UUIDConverter.class, name = "SprMaterialy")
+    @Convert("SprMaterialy")
+    @Column(name = "СпрМатериалы", length = 16, unique = true, nullable = false)
+    private UUID _sprmaterialyid;
 
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "SprStud", insertable = false, updatable = false)
-    private SprStud sprstud;
+    @JoinColumn(name = "SprMaterialy", insertable = false, updatable = false)
+    private SprMaterialy sprmaterialy;
 
-    @OneToMany(mappedBy = "prosmotr", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
-    private List<MetMat> metmats;
+    @EdmIgnore
+    @Converter(converterClass = UUIDConverter.class, name = "Prosmotr")
+    @Convert("Prosmotr")
+    @Column(name = "Просмотр", length = 16, unique = true, nullable = false)
+    private UUID _prosmotrid;
+
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @JoinColumn(name = "Prosmotr", insertable = false, updatable = false)
+    private Prosmotr prosmotr;
 
 
-    public Prosmotr() {
+    public MetMat() {
         super();
     }
 

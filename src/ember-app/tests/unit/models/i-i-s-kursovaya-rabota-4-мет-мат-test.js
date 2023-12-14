@@ -1,6 +1,6 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('i-i-s-kursovaya-rabota-4-спр-материалы', 'Unit | Model | i-i-s-kursovaya-rabota-4-спр-материалы', {
+moduleForModel('i-i-s-kursovaya-rabota-4-мет-мат', 'Unit | Model | i-i-s-kursovaya-rabota-4-мет-мат', {
   // Specify the other units that are required for this test.
   needs: [
     'model:i-i-s-kursovaya-rabota-4-баз-дан',

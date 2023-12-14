@@ -32,6 +32,8 @@ namespace IIS.Kursovaya_Rabota_4
             "СпрСтуд as \'Фио студента\'",
             "СпрСтуд.Фио as \'Фио студента\'",
             "СпрСтуд.СпрГруппа.Назв as \'Группа\'"})]
+    [AssociatedDetailViewAttribute("ПросмотрE", "МетМат", "МетМатE", true, "", "Просмотр прикрепленных книг студентом", true, new string[] {
+            ""})]
     [MasterViewDefineAttribute("ПросмотрE", "СпрСтуд", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Фио студента")]
     [View("ПросмотрL", new string[] {
             "СпрСтуд.Фио as \'Фио студента\'",
@@ -42,6 +44,8 @@ namespace IIS.Kursovaya_Rabota_4
         private System.DateTime fДата;
         
         private IIS.Kursovaya_Rabota_4.СпрСтуд fСпрСтуд;
+        
+        private IIS.Kursovaya_Rabota_4.DetailArrayOfМетМат fМетМат;
         
         // *** Start programmer edit section *** (Просмотр CustomMembers)
 
@@ -110,6 +114,41 @@ namespace IIS.Kursovaya_Rabota_4
                 // *** Start programmer edit section *** (Просмотр.СпрСтуд Set end)
 
                 // *** End programmer edit section *** (Просмотр.СпрСтуд Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Просмотр.
+        /// </summary>
+        // *** Start programmer edit section *** (Просмотр.МетМат CustomAttributes)
+
+        // *** End programmer edit section *** (Просмотр.МетМат CustomAttributes)
+        public virtual IIS.Kursovaya_Rabota_4.DetailArrayOfМетМат МетМат
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Просмотр.МетМат Get start)
+
+                // *** End programmer edit section *** (Просмотр.МетМат Get start)
+                if ((this.fМетМат == null))
+                {
+                    this.fМетМат = new IIS.Kursovaya_Rabota_4.DetailArrayOfМетМат(this);
+                }
+                IIS.Kursovaya_Rabota_4.DetailArrayOfМетМат result = this.fМетМат;
+                // *** Start programmer edit section *** (Просмотр.МетМат Get end)
+
+                // *** End programmer edit section *** (Просмотр.МетМат Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Просмотр.МетМат Set start)
+
+                // *** End programmer edit section *** (Просмотр.МетМат Set start)
+                this.fМетМат = value;
+                // *** Start programmer edit section *** (Просмотр.МетМат Set end)
+
+                // *** End programmer edit section *** (Просмотр.МетМат Set end)
             }
         }
         

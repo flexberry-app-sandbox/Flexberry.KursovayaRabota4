@@ -7,6 +7,14 @@
       "relationName": "СпрСтуд",
       "projection": "СпрСтудL",
       "detailModelName": null
+    },
+    {
+      "master": "спрМатериалы",
+      "displayAttributeName": "материал",
+      "required": true,
+      "relationName": "МетМат.СпрМатериалы",
+      "projection": "СпрМатериалыL",
+      "detailModelName": "i-i-s-kursovaya-rabota-4-мет-мат"
     }
   ],
   "external": false,

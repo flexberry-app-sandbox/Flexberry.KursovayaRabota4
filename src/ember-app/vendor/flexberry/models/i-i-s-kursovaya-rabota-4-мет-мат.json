@@ -1,0 +1,98 @@
+﻿{
+  "name": "IISKursovaya_Rabota_4МетМат",
+  "modelName": "i-i-s-kursovaya-rabota-4-мет-мат",
+  "className": "МетМат",
+  "nameSpace": "IIS.Kursovaya_Rabota_4",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрМатериалы",
+      "relatedTo": "i-i-s-kursovaya-rabota-4-спр-материалы",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "просмотр",
+      "relatedTo": "i-i-s-kursovaya-rabota-4-просмотр",
+      "inverse": "метМат"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "МетМатE",
+      "modelName": "i-i-s-kursovaya-rabota-4-мет-мат",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Материал",
+          "lookupValueField": "материал",
+          "relationName": "СпрМатериалы",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СпрМатериалы.СпрДисциплина",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Дисциплина",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "спрДисциплина",
+              "relatedTo": "i-i-s-kursovaya-rabota-4-спр-дисциплина",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Материал",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "вид",
+              "caption": "Вид материала",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Материал",
+          "name": "спрМатериалы",
+          "relatedTo": "i-i-s-kursovaya-rabota-4-спр-материалы",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
