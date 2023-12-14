@@ -10,8 +10,10 @@ moduleForModel('i-i-s-kursovaya-rabota-4-спр-препод', 'Unit | Serialize
     'transform:guid',
 
     'transform:i-i-s-kursovaya-rabota-4-вид',
+    'transform:i-i-s-kursovaya-rabota-4-статус',
 
     'model:i-i-s-kursovaya-rabota-4-баз-дан',
+    'model:i-i-s-kursovaya-rabota-4-контр',
     'model:i-i-s-kursovaya-rabota-4-прикреп-кн',
     'model:i-i-s-kursovaya-rabota-4-спр-группа',
     'model:i-i-s-kursovaya-rabota-4-спр-дисциплина',

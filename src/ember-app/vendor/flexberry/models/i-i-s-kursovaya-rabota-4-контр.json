@@ -1,0 +1,144 @@
+﻿{
+  "name": "IISKursovaya_Rabota_4Контр",
+  "modelName": "i-i-s-kursovaya-rabota-4-контр",
+  "className": "Контр",
+  "nameSpace": "IIS.Kursovaya_Rabota_4",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "просмотр",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "статус",
+      "type": "i-i-s-kursovaya-rabota-4-статус",
+      "flexberryType": "Статус",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрСтуд",
+      "relatedTo": "i-i-s-kursovaya-rabota-4-спр-студ",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "стат",
+      "relatedTo": "i-i-s-kursovaya-rabota-4-стат",
+      "inverse": "контр"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КонтрE",
+      "modelName": "i-i-s-kursovaya-rabota-4-контр",
+      "attrs": [
+        {
+          "name": "статус",
+          "caption": "Статус прикрепления",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "просмотр",
+          "caption": "Статус просмотра",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Фио студента",
+          "lookupValueField": "фио студента",
+          "relationName": "СпрСтуд",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СпрСтуд.СпрГруппа",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "назв",
+                  "caption": "Группа",
+                  "hidden": false,
+                  "index": 2
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "спрГруппа",
+              "relatedTo": "i-i-s-kursovaya-rabota-4-спр-группа",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СпрСтуд.СпрДисциплина",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Дисциплина",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "спрДисциплина",
+              "relatedTo": "i-i-s-kursovaya-rabota-4-спр-дисциплина",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": "Фио студента",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Фио студента",
+          "name": "спрСтуд",
+          "relatedTo": "i-i-s-kursovaya-rabota-4-спр-студ",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

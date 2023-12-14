@@ -82,4 +82,18 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel.спрПрепод.спрГруппа "назв" "message")}}
   </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kursovaya-rabota-4-стат-e.контр-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="контрGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.контр
+      content=model.контр
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "контр" "isInvalid") "error")
+      data-test-i-i-s-kursovaya-rabota-4-стат-e-контр=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "контр" "message")}}
+  </div>
 </form>

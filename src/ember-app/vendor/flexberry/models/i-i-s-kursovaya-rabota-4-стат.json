@@ -32,7 +32,13 @@
       "inverse": null
     }
   ],
-  "hasMany": [],
+  "hasMany": [
+    {
+      "name": "контр",
+      "relatedTo": "i-i-s-kursovaya-rabota-4-контр",
+      "inverse": "стат"
+    }
+  ],
   "projections": [
     {
       "name": "СтатE",
@@ -125,7 +131,15 @@
           "inverse": null
         }
       ],
-      "hasMany": []
+      "hasMany": [
+        {
+          "projectionName": "КонтрE",
+          "caption": "Функция: Контроль просмотра и прикрепления студентов",
+          "name": "контр",
+          "relatedTo": "i-i-s-kursovaya-rabota-4-контр",
+          "inverse": null
+        }
+      ]
     },
     {
       "name": "СтатL",

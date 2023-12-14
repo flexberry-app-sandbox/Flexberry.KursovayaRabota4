@@ -4,6 +4,7 @@ moduleForModel('i-i-s-kursovaya-rabota-4-стат', 'Unit | Model | i-i-s-kursov
   // Specify the other units that are required for this test.
   needs: [
     'model:i-i-s-kursovaya-rabota-4-баз-дан',
+    'model:i-i-s-kursovaya-rabota-4-контр',
     'model:i-i-s-kursovaya-rabota-4-прикреп-кн',
     'model:i-i-s-kursovaya-rabota-4-спр-группа',
     'model:i-i-s-kursovaya-rabota-4-спр-дисциплина',

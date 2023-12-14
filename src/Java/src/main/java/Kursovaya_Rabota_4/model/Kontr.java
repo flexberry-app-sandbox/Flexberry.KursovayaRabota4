@@ -9,14 +9,13 @@ import java.util.UUID;
 
 import com.sap.olingo.jpa.metadata.core.edm.annotation.EdmIgnore;
 import java.util.Date;
-import java.util.List;
 
 /**
- * Entity implementation class for Entity: Стат
+ * Entity implementation class for Entity: Контр
  */
-@Entity(name = "IISKursovaya_Rabota_4Стат")
-@Table(schema = "public", name = "Стат")
-public class Stat {
+@Entity(name = "IISKursovaya_Rabota_4Контр")
+@Table(schema = "public", name = "Контр")
+public class Kontr {
 
     @Id
     @Converter(converterClass = UUIDConverter.class, name = "primarykey")
@@ -27,15 +26,11 @@ public class Stat {
     @Column(name = "Дата")
     private Date дата;
 
-    @EdmIgnore
-    @Converter(converterClass = UUIDConverter.class, name = "SprPrepod")
-    @Convert("SprPrepod")
-    @Column(name = "СпрПрепод", length = 16, unique = true, nullable = false)
-    private UUID _sprprepodid;
+    @Column(name = "Статус")
+    private String статус;
 
-    @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "SprPrepod", insertable = false, updatable = false)
-    private SprPrepod sprprepod;
+    @Column(name = "Просмотр")
+    private Boolean просмотр;
 
     @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "SprStud")
@@ -47,11 +42,18 @@ public class Stat {
     @JoinColumn(name = "SprStud", insertable = false, updatable = false)
     private SprStud sprstud;
 
-    @OneToMany(mappedBy = "stat", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
-    private List<Kontr> kontrs;
+    @EdmIgnore
+    @Converter(converterClass = UUIDConverter.class, name = "Stat")
+    @Convert("Stat")
+    @Column(name = "Стат", length = 16, unique = true, nullable = false)
+    private UUID _statid;
+
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @JoinColumn(name = "Stat", insertable = false, updatable = false)
+    private Stat stat;
 
 
-    public Stat() {
+    public Kontr() {
         super();
     }
 
@@ -69,6 +71,22 @@ public class Stat {
 
     public void setДата(Date дата) {
       this.дата = дата;
+    }
+
+    public String getСтатус() {
+      return статус;
+    }
+
+    public void setСтатус(String статус) {
+      this.статус = статус;
+    }
+
+    public Boolean getПросмотр() {
+      return просмотр;
+    }
+
+    public void setПросмотр(Boolean просмотр) {
+      this.просмотр = просмотр;
     }
 
 

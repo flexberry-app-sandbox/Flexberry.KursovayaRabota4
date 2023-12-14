@@ -18,6 +18,7 @@ import IISKursovaya_Rabota_4СпрПреподEForm from './forms/i-i-s-kursovay
 import IISKursovaya_Rabota_4СпрСтудEForm from './forms/i-i-s-kursovaya-rabota-4-спр-студ-e';
 import IISKursovaya_Rabota_4СтатEForm from './forms/i-i-s-kursovaya-rabota-4-стат-e';
 import IISKursovaya_Rabota_4БазДанModel from './models/i-i-s-kursovaya-rabota-4-баз-дан';
+import IISKursovaya_Rabota_4КонтрModel from './models/i-i-s-kursovaya-rabota-4-контр';
 import IISKursovaya_Rabota_4ПрикрепКнModel from './models/i-i-s-kursovaya-rabota-4-прикреп-кн';
 import IISKursovaya_Rabota_4СпрГруппаModel from './models/i-i-s-kursovaya-rabota-4-спр-группа';
 import IISKursovaya_Rabota_4СпрДисциплинаModel from './models/i-i-s-kursovaya-rabota-4-спр-дисциплина';
@@ -33,6 +34,7 @@ $.extend(true, translations, EmberFlexberryTranslations);
 $.extend(true, translations, {
   models: {
     'i-i-s-kursovaya-rabota-4-баз-дан': IISKursovaya_Rabota_4БазДанModel,
+    'i-i-s-kursovaya-rabota-4-контр': IISKursovaya_Rabota_4КонтрModel,
     'i-i-s-kursovaya-rabota-4-прикреп-кн': IISKursovaya_Rabota_4ПрикрепКнModel,
     'i-i-s-kursovaya-rabota-4-спр-группа': IISKursovaya_Rabota_4СпрГруппаModel,
     'i-i-s-kursovaya-rabota-4-спр-дисциплина': IISKursovaya_Rabota_4СпрДисциплинаModel,

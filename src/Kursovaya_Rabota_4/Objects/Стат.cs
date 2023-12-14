@@ -34,6 +34,8 @@ namespace IIS.Kursovaya_Rabota_4
             "СпрПрепод.СпрДолжность.Наименование as \'Должность\'",
             "СпрПрепод.СпрДисциплина.Наименование as \'Дисциплина\'",
             "СпрПрепод.СпрГруппа.Назв as \'Группа\'"})]
+    [AssociatedDetailViewAttribute("СтатE", "Контр", "КонтрE", true, "", "Функция: Контроль просмотра и прикрепления студентов", true, new string[] {
+            ""})]
     [MasterViewDefineAttribute("СтатE", "СпрПрепод", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Фио преподавателя")]
     [View("СтатL", new string[] {
             "СпрПрепод.Фио as \'Фио преподавателя\'",
@@ -48,6 +50,8 @@ namespace IIS.Kursovaya_Rabota_4
         private IIS.Kursovaya_Rabota_4.СпрПрепод fСпрПрепод;
         
         private IIS.Kursovaya_Rabota_4.СпрСтуд fСпрСтуд;
+        
+        private IIS.Kursovaya_Rabota_4.DetailArrayOfКонтр fКонтр;
         
         // *** Start programmer edit section *** (Стат CustomMembers)
 
@@ -150,6 +154,41 @@ namespace IIS.Kursovaya_Rabota_4
                 // *** Start programmer edit section *** (Стат.СпрСтуд Set end)
 
                 // *** End programmer edit section *** (Стат.СпрСтуд Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Стат.
+        /// </summary>
+        // *** Start programmer edit section *** (Стат.Контр CustomAttributes)
+
+        // *** End programmer edit section *** (Стат.Контр CustomAttributes)
+        public virtual IIS.Kursovaya_Rabota_4.DetailArrayOfКонтр Контр
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Стат.Контр Get start)
+
+                // *** End programmer edit section *** (Стат.Контр Get start)
+                if ((this.fКонтр == null))
+                {
+                    this.fКонтр = new IIS.Kursovaya_Rabota_4.DetailArrayOfКонтр(this);
+                }
+                IIS.Kursovaya_Rabota_4.DetailArrayOfКонтр result = this.fКонтр;
+                // *** Start programmer edit section *** (Стат.Контр Get end)
+
+                // *** End programmer edit section *** (Стат.Контр Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Стат.Контр Set start)
+
+                // *** End programmer edit section *** (Стат.Контр Set start)
+                this.fКонтр = value;
+                // *** Start programmer edit section *** (Стат.Контр Set end)
+
+                // *** End programmer edit section *** (Стат.Контр Set end)
             }
         }
         

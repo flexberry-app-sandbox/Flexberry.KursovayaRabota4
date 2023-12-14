@@ -7,6 +7,14 @@
       "relationName": "СпрПрепод",
       "projection": "СпрПреподL",
       "detailModelName": null
+    },
+    {
+      "master": "спрСтуд",
+      "displayAttributeName": "фио студента",
+      "required": true,
+      "relationName": "Контр.СпрСтуд",
+      "projection": "СпрСтудL",
+      "detailModelName": "i-i-s-kursovaya-rabota-4-контр"
     }
   ],
   "external": false,
