@@ -1,0 +1,50 @@
+﻿{
+  "applicationCaption": "Kursovaya_ rabota_4",
+  "applicationTitle": "Kursovaya_ rabota_4",
+  "items": [
+    {
+      "link": null,
+      "menuName": "kursovaya-rabota-4",
+      "caption": "Kursovaya_Rabota_4",
+      "title": "Kursovaya_Rabota_4",
+      "children": [
+        {
+          "link": "i-i-s-kursovaya-rabota-4-спр-студ-l",
+          "menuName": null,
+          "caption": "Справочник студенты",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya-rabota-4-спр-препод-l",
+          "menuName": null,
+          "caption": "Справочник преподаватели",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya-rabota-4-спр-дисциплина-l",
+          "menuName": null,
+          "caption": "Справочник дисциплины",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya-rabota-4-спр-должность-l",
+          "menuName": null,
+          "caption": "Справочник должности",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya-rabota-4-спр-группа-l",
+          "menuName": null,
+          "caption": "Справочник группы",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

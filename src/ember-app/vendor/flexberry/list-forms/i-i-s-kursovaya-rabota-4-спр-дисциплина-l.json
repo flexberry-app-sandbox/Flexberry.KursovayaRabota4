@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya-rabota-4-спр-дисциплина-e",
+  "editForm": "i-i-s-kursovaya-rabota-4-спр-дисциплина-e",
+  "external": false,
+  "caption": "Справочник дисциплины",
+  "name": "IISKursovaya_Rabota_4СпрДисциплинаL",
+  "className": "СпрДисциплинаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-4-спр-дисциплина",
+      "modelProjection": "СпрДисциплинаL"
+    }
+  ]
+}

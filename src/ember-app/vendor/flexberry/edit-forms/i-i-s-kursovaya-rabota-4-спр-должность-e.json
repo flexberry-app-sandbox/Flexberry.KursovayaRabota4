@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Справочник должности",
+  "name": "IISKursovaya_Rabota_4СпрДолжностьE",
+  "className": "СпрДолжностьE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-4-спр-должность",
+      "modelProjection": "СпрДолжностьE"
+    }
+  ]
+}

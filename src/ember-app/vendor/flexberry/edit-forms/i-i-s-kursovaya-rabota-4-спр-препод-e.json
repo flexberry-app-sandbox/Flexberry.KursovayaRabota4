@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрДолжность",
+      "projection": "СпрДолжностьL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрГруппа",
+      "projection": "СпрГруппаL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрДисциплина",
+      "projection": "СпрДисциплинаL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Справочник преподаватели",
+  "name": "IISKursovaya_Rabota_4СпрПреподE",
+  "className": "СпрПреподE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-4-спр-препод",
+      "modelProjection": "СпрПреподE"
+    }
+  ]
+}

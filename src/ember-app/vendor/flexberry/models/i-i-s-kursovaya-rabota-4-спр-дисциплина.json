@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISKursovaya_Rabota_4СпрДисциплина",
+  "modelName": "i-i-s-kursovaya-rabota-4-спр-дисциплина",
+  "className": "СпрДисциплина",
+  "nameSpace": "IIS.Kursovaya_Rabota_4",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СпрДисциплинаE",
+      "modelName": "i-i-s-kursovaya-rabota-4-спр-дисциплина",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование Дисциплины",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СпрДисциплинаL",
+      "modelName": "i-i-s-kursovaya-rabota-4-спр-дисциплина",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование Дисциплины",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Справочник дисциплины",
+  "name": "IISKursovaya_Rabota_4СпрДисциплинаE",
+  "className": "СпрДисциплинаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-4-спр-дисциплина",
+      "modelProjection": "СпрДисциплинаE"
+    }
+  ]
+}

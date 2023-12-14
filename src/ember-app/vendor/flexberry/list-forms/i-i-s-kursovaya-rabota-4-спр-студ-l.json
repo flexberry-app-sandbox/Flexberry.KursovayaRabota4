@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya-rabota-4-спр-студ-e",
+  "editForm": "i-i-s-kursovaya-rabota-4-спр-студ-e",
+  "external": false,
+  "caption": "Справочник студенты",
+  "name": "IISKursovaya_Rabota_4СпрСтудL",
+  "className": "СпрСтудL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-4-спр-студ",
+      "modelProjection": "СпрСтудL"
+    }
+  ]
+}

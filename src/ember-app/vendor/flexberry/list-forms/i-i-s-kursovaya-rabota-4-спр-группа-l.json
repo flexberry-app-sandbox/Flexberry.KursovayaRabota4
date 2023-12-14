@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya-rabota-4-спр-группа-e",
+  "editForm": "i-i-s-kursovaya-rabota-4-спр-группа-e",
+  "external": false,
+  "caption": "Справочник группы",
+  "name": "IISKursovaya_Rabota_4СпрГруппаL",
+  "className": "СпрГруппаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-4-спр-группа",
+      "modelProjection": "СпрГруппаL"
+    }
+  ]
+}

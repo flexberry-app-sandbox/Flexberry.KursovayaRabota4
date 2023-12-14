@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya-rabota-4-спр-препод-e",
+  "editForm": "i-i-s-kursovaya-rabota-4-спр-препод-e",
+  "external": false,
+  "caption": "Справочник преподаватели",
+  "name": "IISKursovaya_Rabota_4СпрПреподL",
+  "className": "СпрПреподL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-4-спр-препод",
+      "modelProjection": "СпрПреподL"
+    }
+  ]
+}

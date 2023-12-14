@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Справочник группы",
+  "name": "IISKursovaya_Rabota_4СпрГруппаE",
+  "className": "СпрГруппаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-4-спр-группа",
+      "modelProjection": "СпрГруппаE"
+    }
+  ]
+}

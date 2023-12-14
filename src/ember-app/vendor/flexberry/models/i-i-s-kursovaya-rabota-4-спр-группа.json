@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISKursovaya_Rabota_4СпрГруппа",
+  "modelName": "i-i-s-kursovaya-rabota-4-спр-группа",
+  "className": "СпрГруппа",
+  "nameSpace": "IIS.Kursovaya_Rabota_4",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "назв",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СпрГруппаE",
+      "modelName": "i-i-s-kursovaya-rabota-4-спр-группа",
+      "attrs": [
+        {
+          "name": "назв",
+          "caption": "Наименование группы",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СпрГруппаL",
+      "modelName": "i-i-s-kursovaya-rabota-4-спр-группа",
+      "attrs": [
+        {
+          "name": "назв",
+          "caption": "Наименование группы",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
