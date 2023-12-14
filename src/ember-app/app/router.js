@@ -41,6 +41,11 @@ Router.map(function () {
   { path: 'i-i-s-kursovaya-rabota-4-спр-студ-e/:id' });
   this.route('i-i-s-kursovaya-rabota-4-спр-студ-e.new',
   { path: 'i-i-s-kursovaya-rabota-4-спр-студ-e/new' });
+  this.route('i-i-s-kursovaya-rabota-4-стат-l');
+  this.route('i-i-s-kursovaya-rabota-4-стат-e',
+  { path: 'i-i-s-kursovaya-rabota-4-стат-e/:id' });
+  this.route('i-i-s-kursovaya-rabota-4-стат-e.new',
+  { path: 'i-i-s-kursovaya-rabota-4-стат-e/new' });
 });
 
 export default Router;

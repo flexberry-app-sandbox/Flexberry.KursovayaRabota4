@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya-rabota-4-стат-e",
+  "editForm": "i-i-s-kursovaya-rabota-4-стат-e",
+  "external": false,
+  "caption": "Функция: Контроль просмотра и прикрепления студентов",
+  "name": "IISKursovaya_Rabota_4СтатL",
+  "className": "СтатL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-4-стат",
+      "modelProjection": "СтатL"
+    }
+  ]
+}

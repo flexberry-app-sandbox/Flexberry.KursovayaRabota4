@@ -1,0 +1,85 @@
+<h3 class="ui header">{{t "forms.i-i-s-kursovaya-rabota-4-стат-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kursovaya-rabota-4-стат-e.спрПрепод-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.спрПрепод
+      displayAttributeName="фио преподавателя"
+      autocomplete=true
+      relationName="спрПрепод"
+      projection="СпрПреподL"
+      title=(t "forms.i-i-s-kursovaya-rabota-4-стат-e.спрПрепод-caption")
+      readonly=readonly
+      componentName="спрПреподLookup"
+      class=(if (v-get validationModel "спрПрепод" "isInvalid") "error")
+      data-test-i-i-s-kursovaya-rabota-4-стат-e-спрПрепод=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "спрПрепод" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.спрПрепод.фио
+      class=(if (v-get validationModel.спрПрепод "фио" "isInvalid") "error")
+      label=(t "forms.i-i-s-kursovaya-rabota-4-стат-e.спрПрепод.фио-caption")
+      data-test-i-i-s-kursovaya-rabota-4-стат-e-спрПрепод-фио=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.спрПрепод "фио" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.спрПрепод.спрДолжность.наименование
+      class=(if (v-get validationModel.спрПрепод.спрДолжность "наименование" "isInvalid") "error")
+      label=(t "forms.i-i-s-kursovaya-rabota-4-стат-e.спрПрепод.спрДолжность.наименование-caption")
+      data-test-i-i-s-kursovaya-rabota-4-стат-e-спрПрепод-спрДолжность-наименование=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.спрПрепод.спрДолжность "наименование" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.спрПрепод.спрДисциплина.наименование
+      class=(if (v-get validationModel.спрПрепод.спрДисциплина "наименование" "isInvalid") "error")
+      label=(t "forms.i-i-s-kursovaya-rabota-4-стат-e.спрПрепод.спрДисциплина.наименование-caption")
+      data-test-i-i-s-kursovaya-rabota-4-стат-e-спрПрепод-спрДисциплина-наименование=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.спрПрепод.спрДисциплина "наименование" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.спрПрепод.спрГруппа.назв
+      class=(if (v-get validationModel.спрПрепод.спрГруппа "назв" "isInvalid") "error")
+      label=(t "forms.i-i-s-kursovaya-rabota-4-стат-e.спрПрепод.спрГруппа.назв-caption")
+      data-test-i-i-s-kursovaya-rabota-4-стат-e-спрПрепод-спрГруппа-назв=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.спрПрепод.спрГруппа "назв" "message")}}
+  </div>
+</form>

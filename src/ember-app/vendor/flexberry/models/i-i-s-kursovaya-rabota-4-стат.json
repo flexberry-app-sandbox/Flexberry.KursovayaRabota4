@@ -1,0 +1,227 @@
+﻿{
+  "name": "IISKursovaya_Rabota_4Стат",
+  "modelName": "i-i-s-kursovaya-rabota-4-стат",
+  "className": "Стат",
+  "nameSpace": "IIS.Kursovaya_Rabota_4",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрПрепод",
+      "relatedTo": "i-i-s-kursovaya-rabota-4-спр-препод",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрСтуд",
+      "relatedTo": "i-i-s-kursovaya-rabota-4-спр-студ",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СтатE",
+      "modelName": "i-i-s-kursovaya-rabota-4-стат",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Фио преподавателя",
+          "lookupValueField": "фио преподавателя",
+          "relationName": "СпрПрепод",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СпрПрепод.СпрДолжность",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Должность",
+                  "hidden": false,
+                  "index": 2
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "спрДолжность",
+              "relatedTo": "i-i-s-kursovaya-rabota-4-спр-должность",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СпрПрепод.СпрДисциплина",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Дисциплина",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "спрДисциплина",
+              "relatedTo": "i-i-s-kursovaya-rabota-4-спр-дисциплина",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СпрПрепод.СпрГруппа",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "назв",
+                  "caption": "Группа",
+                  "hidden": false,
+                  "index": 4
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "спрГруппа",
+              "relatedTo": "i-i-s-kursovaya-rabota-4-спр-группа",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": "Фио преподавателя",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Фио преподавателя",
+          "name": "спрПрепод",
+          "relatedTo": "i-i-s-kursovaya-rabota-4-спр-препод",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "СтатL",
+      "modelName": "i-i-s-kursovaya-rabota-4-стат",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СпрПрепод",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СпрПрепод.СпрДолжность",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Должность",
+                  "hidden": false,
+                  "index": 1
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "спрДолжность",
+              "relatedTo": "i-i-s-kursovaya-rabota-4-спр-должность",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СпрПрепод.СпрДисциплина",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Дисциплина",
+                  "hidden": false,
+                  "index": 2
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "спрДисциплина",
+              "relatedTo": "i-i-s-kursovaya-rabota-4-спр-дисциплина",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СпрПрепод.СпрГруппа",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "назв",
+                  "caption": "Группа",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "спрГруппа",
+              "relatedTo": "i-i-s-kursovaya-rabota-4-спр-группа",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": "Фио преподавателя",
+              "hidden": false,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Фио преподавателя",
+          "name": "спрПрепод",
+          "relatedTo": "i-i-s-kursovaya-rabota-4-спр-препод",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

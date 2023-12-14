@@ -19,6 +19,7 @@ moduleForModel('i-i-s-kursovaya-rabota-4-спр-дисциплина', 'Unit | S
     'model:i-i-s-kursovaya-rabota-4-спр-материалы',
     'model:i-i-s-kursovaya-rabota-4-спр-препод',
     'model:i-i-s-kursovaya-rabota-4-спр-студ',
+    'model:i-i-s-kursovaya-rabota-4-стат',
     'validator:ds-error',
     'validator:presence',
     'validator:number',

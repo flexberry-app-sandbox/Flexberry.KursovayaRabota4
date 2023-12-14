@@ -8,6 +8,7 @@ import IISKursovaya_Rabota_4СпрДолжностьLForm from './forms/i-i-s-ku
 import IISKursovaya_Rabota_4СпрМатериалыLForm from './forms/i-i-s-kursovaya-rabota-4-спр-материалы-l';
 import IISKursovaya_Rabota_4СпрПреподLForm from './forms/i-i-s-kursovaya-rabota-4-спр-препод-l';
 import IISKursovaya_Rabota_4СпрСтудLForm from './forms/i-i-s-kursovaya-rabota-4-спр-студ-l';
+import IISKursovaya_Rabota_4СтатLForm from './forms/i-i-s-kursovaya-rabota-4-стат-l';
 import IISKursovaya_Rabota_4ПрикрепКнEForm from './forms/i-i-s-kursovaya-rabota-4-прикреп-кн-e';
 import IISKursovaya_Rabota_4СпрГруппаEForm from './forms/i-i-s-kursovaya-rabota-4-спр-группа-e';
 import IISKursovaya_Rabota_4СпрДисциплинаEForm from './forms/i-i-s-kursovaya-rabota-4-спр-дисциплина-e';
@@ -15,6 +16,7 @@ import IISKursovaya_Rabota_4СпрДолжностьEForm from './forms/i-i-s-ku
 import IISKursovaya_Rabota_4СпрМатериалыEForm from './forms/i-i-s-kursovaya-rabota-4-спр-материалы-e';
 import IISKursovaya_Rabota_4СпрПреподEForm from './forms/i-i-s-kursovaya-rabota-4-спр-препод-e';
 import IISKursovaya_Rabota_4СпрСтудEForm from './forms/i-i-s-kursovaya-rabota-4-спр-студ-e';
+import IISKursovaya_Rabota_4СтатEForm from './forms/i-i-s-kursovaya-rabota-4-стат-e';
 import IISKursovaya_Rabota_4БазДанModel from './models/i-i-s-kursovaya-rabota-4-баз-дан';
 import IISKursovaya_Rabota_4ПрикрепКнModel from './models/i-i-s-kursovaya-rabota-4-прикреп-кн';
 import IISKursovaya_Rabota_4СпрГруппаModel from './models/i-i-s-kursovaya-rabota-4-спр-группа';
@@ -23,6 +25,7 @@ import IISKursovaya_Rabota_4СпрДолжностьModel from './models/i-i-s-k
 import IISKursovaya_Rabota_4СпрМатериалыModel from './models/i-i-s-kursovaya-rabota-4-спр-материалы';
 import IISKursovaya_Rabota_4СпрПреподModel from './models/i-i-s-kursovaya-rabota-4-спр-препод';
 import IISKursovaya_Rabota_4СпрСтудModel from './models/i-i-s-kursovaya-rabota-4-спр-студ';
+import IISKursovaya_Rabota_4СтатModel from './models/i-i-s-kursovaya-rabota-4-стат';
 
 const translations = {};
 $.extend(true, translations, EmberFlexberryTranslations);
@@ -36,7 +39,8 @@ $.extend(true, translations, {
     'i-i-s-kursovaya-rabota-4-спр-должность': IISKursovaya_Rabota_4СпрДолжностьModel,
     'i-i-s-kursovaya-rabota-4-спр-материалы': IISKursovaya_Rabota_4СпрМатериалыModel,
     'i-i-s-kursovaya-rabota-4-спр-препод': IISKursovaya_Rabota_4СпрПреподModel,
-    'i-i-s-kursovaya-rabota-4-спр-студ': IISKursovaya_Rabota_4СпрСтудModel
+    'i-i-s-kursovaya-rabota-4-спр-студ': IISKursovaya_Rabota_4СпрСтудModel,
+    'i-i-s-kursovaya-rabota-4-стат': IISKursovaya_Rabota_4СтатModel
   },
 
   'application-name': 'Kursovaya_ rabota_4',
@@ -132,6 +136,10 @@ $.extend(true, translations, {
           'i-i-s-kursovaya-rabota-4-спр-материалы-l': {
             caption: 'Справочные материалы',
             title: ''
+          },
+          'i-i-s-kursovaya-rabota-4-стат-l': {
+            caption: 'Функция: Контроль просмотра и прикрепления студентов',
+            title: ''
           }
         }
       }
@@ -152,13 +160,15 @@ $.extend(true, translations, {
     'i-i-s-kursovaya-rabota-4-спр-материалы-l': IISKursovaya_Rabota_4СпрМатериалыLForm,
     'i-i-s-kursovaya-rabota-4-спр-препод-l': IISKursovaya_Rabota_4СпрПреподLForm,
     'i-i-s-kursovaya-rabota-4-спр-студ-l': IISKursovaya_Rabota_4СпрСтудLForm,
+    'i-i-s-kursovaya-rabota-4-стат-l': IISKursovaya_Rabota_4СтатLForm,
     'i-i-s-kursovaya-rabota-4-прикреп-кн-e': IISKursovaya_Rabota_4ПрикрепКнEForm,
     'i-i-s-kursovaya-rabota-4-спр-группа-e': IISKursovaya_Rabota_4СпрГруппаEForm,
     'i-i-s-kursovaya-rabota-4-спр-дисциплина-e': IISKursovaya_Rabota_4СпрДисциплинаEForm,
     'i-i-s-kursovaya-rabota-4-спр-должность-e': IISKursovaya_Rabota_4СпрДолжностьEForm,
     'i-i-s-kursovaya-rabota-4-спр-материалы-e': IISKursovaya_Rabota_4СпрМатериалыEForm,
     'i-i-s-kursovaya-rabota-4-спр-препод-e': IISKursovaya_Rabota_4СпрПреподEForm,
-    'i-i-s-kursovaya-rabota-4-спр-студ-e': IISKursovaya_Rabota_4СпрСтудEForm
+    'i-i-s-kursovaya-rabota-4-спр-студ-e': IISKursovaya_Rabota_4СпрСтудEForm,
+    'i-i-s-kursovaya-rabota-4-стат-e': IISKursovaya_Rabota_4СтатEForm
   },
 
 });

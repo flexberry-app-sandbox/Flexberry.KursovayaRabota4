@@ -56,6 +56,13 @@
           "caption": "Справочные материалы",
           "title": "",
           "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya-rabota-4-стат-l",
+          "menuName": null,
+          "caption": "Функция: Контроль просмотра и прикрепления студентов",
+          "title": "",
+          "children": null
         }
       ]
     }

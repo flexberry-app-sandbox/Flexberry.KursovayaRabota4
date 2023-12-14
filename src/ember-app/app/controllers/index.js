@@ -22,42 +22,49 @@ export default Controller.extend({
             link: 'i-i-s-kursovaya-rabota-4-спр-студ-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-4.i-i-s-kursovaya-rabota-4-спр-студ-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-4.i-i-s-kursovaya-rabota-4-спр-студ-l.title'),
-            icon: 'archive',
+            icon: 'folder open',
             children: null
           }, {
             link: 'i-i-s-kursovaya-rabota-4-спр-препод-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-4.i-i-s-kursovaya-rabota-4-спр-препод-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-4.i-i-s-kursovaya-rabota-4-спр-препод-l.title'),
-            icon: 'chart line',
+            icon: 'briefcase',
             children: null
           }, {
             link: 'i-i-s-kursovaya-rabota-4-спр-дисциплина-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-4.i-i-s-kursovaya-rabota-4-спр-дисциплина-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-4.i-i-s-kursovaya-rabota-4-спр-дисциплина-l.title'),
+            icon: 'tasks',
             children: null
           }, {
             link: 'i-i-s-kursovaya-rabota-4-спр-должность-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-4.i-i-s-kursovaya-rabota-4-спр-должность-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-4.i-i-s-kursovaya-rabota-4-спр-должность-l.title'),
-            icon: 'suitcase',
+            icon: 'file',
             children: null
           }, {
             link: 'i-i-s-kursovaya-rabota-4-спр-группа-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-4.i-i-s-kursovaya-rabota-4-спр-группа-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-4.i-i-s-kursovaya-rabota-4-спр-группа-l.title'),
-            icon: 'suitcase',
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-kursovaya-rabota-4-прикреп-кн-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-4.i-i-s-kursovaya-rabota-4-прикреп-кн-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-4.i-i-s-kursovaya-rabota-4-прикреп-кн-l.title'),
-            icon: 'file',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-kursovaya-rabota-4-спр-материалы-l',
             caption: i18n.t('forms.application.sitemap.kursovaya-rabota-4.i-i-s-kursovaya-rabota-4-спр-материалы-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya-rabota-4.i-i-s-kursovaya-rabota-4-спр-материалы-l.title'),
-            icon: 'chart bar',
+            icon: 'paperclip',
+            children: null
+          }, {
+            link: 'i-i-s-kursovaya-rabota-4-стат-l',
+            caption: i18n.t('forms.application.sitemap.kursovaya-rabota-4.i-i-s-kursovaya-rabota-4-стат-l.caption'),
+            title: i18n.t('forms.application.sitemap.kursovaya-rabota-4.i-i-s-kursovaya-rabota-4-стат-l.title'),
+            icon: 'calendar',
             children: null
           }]
         }

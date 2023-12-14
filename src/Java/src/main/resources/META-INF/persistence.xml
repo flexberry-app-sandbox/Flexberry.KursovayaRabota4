@@ -6,6 +6,7 @@
         <class>Kursovaya_Rabota_4.model.SprStud</class>
         <class>Kursovaya_Rabota_4.model.SprPrepod</class>
         <class>Kursovaya_Rabota_4.model.SprDisciplina</class>
+        <class>Kursovaya_Rabota_4.model.Stat</class>
         <class>Kursovaya_Rabota_4.model.SprDolzhnost</class>
         <class>Kursovaya_Rabota_4.model.BazDan</class>
         <class>Kursovaya_Rabota_4.model.PrikrepKn</class>
