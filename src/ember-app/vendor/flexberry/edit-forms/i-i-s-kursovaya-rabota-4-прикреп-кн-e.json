@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрПрепод",
+      "projection": "СпрПреподL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Функция: Прикрепление книги студенту",
+  "name": "IISKursovaya_Rabota_4ПрикрепКнE",
+  "className": "ПрикрепКнE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-4-прикреп-кн",
+      "modelProjection": "ПрикрепКнE"
+    }
+  ]
+}

@@ -3,9 +3,11 @@ import { moduleForModel, test } from 'ember-qunit';
 moduleForModel('i-i-s-kursovaya-rabota-4-спр-препод', 'Unit | Model | i-i-s-kursovaya-rabota-4-спр-препод', {
   // Specify the other units that are required for this test.
   needs: [
+    'model:i-i-s-kursovaya-rabota-4-прикреп-кн',
     'model:i-i-s-kursovaya-rabota-4-спр-группа',
     'model:i-i-s-kursovaya-rabota-4-спр-дисциплина',
     'model:i-i-s-kursovaya-rabota-4-спр-должность',
+    'model:i-i-s-kursovaya-rabota-4-спр-материалы',
     'model:i-i-s-kursovaya-rabota-4-спр-препод',
     'model:i-i-s-kursovaya-rabota-4-спр-студ',
     'validator:ds-error',

@@ -1,0 +1,127 @@
+﻿{
+  "name": "IISKursovaya_Rabota_4СпрМатериалы",
+  "modelName": "i-i-s-kursovaya-rabota-4-спр-материалы",
+  "className": "СпрМатериалы",
+  "nameSpace": "IIS.Kursovaya_Rabota_4",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "вид",
+      "type": "i-i-s-kursovaya-rabota-4-вид",
+      "flexberryType": "Вид",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрДисциплина",
+      "relatedTo": "i-i-s-kursovaya-rabota-4-спр-дисциплина",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СпрМатериалыE",
+      "modelName": "i-i-s-kursovaya-rabota-4-спр-материалы",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Название материала",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "вид",
+          "caption": "Вид материала",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СпрДисциплина",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Дисциплина",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "default",
+          "caption": "Дисциплина",
+          "name": "спрДисциплина",
+          "relatedTo": "i-i-s-kursovaya-rabota-4-спр-дисциплина",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "СпрМатериалыL",
+      "modelName": "i-i-s-kursovaya-rabota-4-спр-материалы",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Название материала",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "вид",
+          "caption": "Вид материала",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СпрДисциплина",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Дисциплина",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Дисциплина",
+          "name": "спрДисциплина",
+          "relatedTo": "i-i-s-kursovaya-rabota-4-спр-дисциплина",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

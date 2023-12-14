@@ -6,6 +6,11 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function () {
+  this.route('i-i-s-kursovaya-rabota-4-прикреп-кн-l');
+  this.route('i-i-s-kursovaya-rabota-4-прикреп-кн-e',
+  { path: 'i-i-s-kursovaya-rabota-4-прикреп-кн-e/:id' });
+  this.route('i-i-s-kursovaya-rabota-4-прикреп-кн-e.new',
+  { path: 'i-i-s-kursovaya-rabota-4-прикреп-кн-e/new' });
   this.route('i-i-s-kursovaya-rabota-4-спр-группа-l');
   this.route('i-i-s-kursovaya-rabota-4-спр-группа-e',
   { path: 'i-i-s-kursovaya-rabota-4-спр-группа-e/:id' });
@@ -21,6 +26,11 @@ Router.map(function () {
   { path: 'i-i-s-kursovaya-rabota-4-спр-должность-e/:id' });
   this.route('i-i-s-kursovaya-rabota-4-спр-должность-e.new',
   { path: 'i-i-s-kursovaya-rabota-4-спр-должность-e/new' });
+  this.route('i-i-s-kursovaya-rabota-4-спр-материалы-l');
+  this.route('i-i-s-kursovaya-rabota-4-спр-материалы-e',
+  { path: 'i-i-s-kursovaya-rabota-4-спр-материалы-e/:id' });
+  this.route('i-i-s-kursovaya-rabota-4-спр-материалы-e.new',
+  { path: 'i-i-s-kursovaya-rabota-4-спр-материалы-e/new' });
   this.route('i-i-s-kursovaya-rabota-4-спр-препод-l');
   this.route('i-i-s-kursovaya-rabota-4-спр-препод-e',
   { path: 'i-i-s-kursovaya-rabota-4-спр-препод-e/:id' });

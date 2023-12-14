@@ -42,6 +42,20 @@
           "caption": "Справочник группы",
           "title": "",
           "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya-rabota-4-прикреп-кн-l",
+          "menuName": null,
+          "caption": "Функция: Прикрепление книг студенту",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya-rabota-4-спр-материалы-l",
+          "menuName": null,
+          "caption": "Справочные материалы",
+          "title": "",
+          "children": null
         }
       ]
     }

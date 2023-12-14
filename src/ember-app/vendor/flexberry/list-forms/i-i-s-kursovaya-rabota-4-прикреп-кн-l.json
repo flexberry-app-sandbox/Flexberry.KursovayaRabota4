@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya-rabota-4-прикреп-кн-e",
+  "editForm": "i-i-s-kursovaya-rabota-4-прикреп-кн-e",
+  "external": false,
+  "caption": "Функция: Прикрепление книги студенту",
+  "name": "IISKursovaya_Rabota_4ПрикрепКнL",
+  "className": "ПрикрепКнL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-4-прикреп-кн",
+      "modelProjection": "ПрикрепКнL"
+    }
+  ]
+}

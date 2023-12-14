@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрДисциплина",
+      "projection": "СпрДисциплинаL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Справочные материалы",
+  "name": "IISKursovaya_Rabota_4СпрМатериалыE",
+  "className": "СпрМатериалыE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-4-спр-материалы",
+      "modelProjection": "СпрМатериалыE"
+    }
+  ]
+}

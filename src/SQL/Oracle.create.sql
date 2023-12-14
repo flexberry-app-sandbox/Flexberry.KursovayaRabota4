@@ -56,12 +56,40 @@ CREATE TABLE "СпрДолжность"
 ) ;
 
 
+CREATE TABLE "ПрикрепКн"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Дата" DATE NULL,
+
+	"СпрПрепод" RAW(16) NOT NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
 CREATE TABLE "СпрГруппа"
 (
 
 	"primaryKey" RAW(16) NOT NULL,
 
 	"Назв" NVARCHAR2(255) NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
+CREATE TABLE "СпрМатериалы"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Вид" NVARCHAR2(13) NULL,
+
+	"Наименование" NVARCHAR2(255) NULL,
+
+	"СпрДисциплина" RAW(16) NOT NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;
@@ -289,6 +317,16 @@ ALTER TABLE "СпрПрепод"
 	ADD CONSTRAINT "СпрПрепод_FСп_4659" FOREIGN KEY ("СпрДолжность") REFERENCES "СпрДолжность" ("primaryKey");
 
 CREATE INDEX "СпрПрепод_IСп_5184" on "СпрПрепод" ("СпрДолжность");
+
+ALTER TABLE "ПрикрепКн"
+	ADD CONSTRAINT "ПрикрепКн_FСп_8417" FOREIGN KEY ("СпрПрепод") REFERENCES "СпрПрепод" ("primaryKey");
+
+CREATE INDEX "ПрикрепКн_IСп_1379" on "ПрикрепКн" ("СпрПрепод");
+
+ALTER TABLE "СпрМатериалы"
+	ADD CONSTRAINT "СпрМатериалы__3825" FOREIGN KEY ("СпрДисциплина") REFERENCES "СпрДисциплина" ("primaryKey");
+
+CREATE INDEX "СпрМатериалы__4785" on "СпрМатериалы" ("СпрДисциплина");
 
 ALTER TABLE "STORMWEBSEARCH"
 	ADD CONSTRAINT "STORMWEBSEARCH_FSTORMFILT_6521" FOREIGN KEY ("FilterSetting_m0") REFERENCES "STORMFILTERSETTING" ("primaryKey");

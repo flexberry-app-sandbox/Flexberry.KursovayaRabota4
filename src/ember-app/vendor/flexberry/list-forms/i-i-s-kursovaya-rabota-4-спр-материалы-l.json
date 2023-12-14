@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya-rabota-4-спр-материалы-e",
+  "editForm": "i-i-s-kursovaya-rabota-4-спр-материалы-e",
+  "external": false,
+  "caption": "Справочные материалы",
+  "name": "IISKursovaya_Rabota_4СпрМатериалыL",
+  "className": "СпрМатериалыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-rabota-4-спр-материалы",
+      "modelProjection": "СпрМатериалыL"
+    }
+  ]
+}

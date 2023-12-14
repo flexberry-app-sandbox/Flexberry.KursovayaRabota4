@@ -120,6 +120,15 @@
     </Compile>
     <Compile Include="Properties/AssemblyInfo.cs" />
     <None Include="packages.config" />
+    <Compile Include="Вид.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ПрикрепКн.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="СпрМатериалы.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
