@@ -12,6 +12,7 @@ namespace IIS.Kursovaya_Rabota_4
 {
     using System;
     using System.Xml;
+    using ICSSoft.STORMNET;
     
     
     // *** Start programmer edit section *** (Using statements)
@@ -28,14 +29,16 @@ namespace IIS.Kursovaya_Rabota_4
     public enum Статус
     {
         
-        // *** Start programmer edit section *** (Статус.Прикреплён CustomAttributes)
+        // *** Start programmer edit section *** (Статус.НеПрикрепл CustomAttributes)
 
-        // *** End programmer edit section *** (Статус.Прикреплён CustomAttributes)
-        Прикреплён,
+        // *** End programmer edit section *** (Статус.НеПрикрепл CustomAttributes)
+        [Caption("Не прикреплён")]
+        НеПрикрепл,
         
-        // *** Start programmer edit section *** (Статус.НеПрикреплён CustomAttributes)
+        // *** Start programmer edit section *** (Статус.Прикрепл CustomAttributes)
 
-        // *** End programmer edit section *** (Статус.НеПрикреплён CustomAttributes)
-        НеПрикреплён,
+        // *** End programmer edit section *** (Статус.Прикрепл CustomAttributes)
+        [Caption("Прикреплён")]
+        Прикрепл,
     }
 }
