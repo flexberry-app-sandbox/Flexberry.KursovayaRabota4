@@ -41,9 +41,9 @@ namespace IIS.Kursovaya_Rabota_4
         
         private System.DateTime fДата;
         
-        private IIS.Kursovaya_Rabota_4.Статус fСтатус;
-        
         private bool fПросмотр;
+        
+        private IIS.Kursovaya_Rabota_4.Статус fСтатус;
         
         private IIS.Kursovaya_Rabota_4.СпрСтуд fСпрСтуд;
         

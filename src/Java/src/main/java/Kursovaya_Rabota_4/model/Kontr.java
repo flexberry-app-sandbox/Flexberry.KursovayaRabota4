@@ -26,11 +26,11 @@ public class Kontr {
     @Column(name = "Дата")
     private Date дата;
 
-    @Column(name = "Статус")
-    private String статус;
-
     @Column(name = "Просмотр")
     private Boolean просмотр;
+
+    @Column(name = "Статус")
+    private String статус;
 
     @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "SprStud")
@@ -73,20 +73,20 @@ public class Kontr {
       this.дата = дата;
     }
 
-    public String getСтатус() {
-      return статус;
-    }
-
-    public void setСтатус(String статус) {
-      this.статус = статус;
-    }
-
     public Boolean getПросмотр() {
       return просмотр;
     }
 
     public void setПросмотр(Boolean просмотр) {
       this.просмотр = просмотр;
+    }
+
+    public String getСтатус() {
+      return статус;
+    }
+
+    public void setСтатус(String статус) {
+      this.статус = статус;
     }
 
 
